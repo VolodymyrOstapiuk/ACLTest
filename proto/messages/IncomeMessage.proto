@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "IncubatorIncomeMessagePayload.proto";
+
+message IncomeMessage  {
+    required uint32 deviceId = 1;
+    optional int32 replyWith = 2 [default = -1];
+    optional uint32 inReplyTo = 3;
+    optional IncubatorIncomeMessagePayload incubatorMessagePayload = 4;
+
+}

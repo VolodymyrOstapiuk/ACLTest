@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message IncubatorOpenEventMessage {
+    required bool isOpened = 2;
+}

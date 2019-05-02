@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChangeCurrentSessionDayTemperatureMessage {
+    required uint32 dayNumber = 2;
+    required float temperature = 3;
+}

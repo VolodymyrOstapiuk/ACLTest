@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChangeCurrentSessionDayRotationCountMessage {
+    required uint32 dayNumber = 2;
+    required uint32 rotationCount = 3;
+}

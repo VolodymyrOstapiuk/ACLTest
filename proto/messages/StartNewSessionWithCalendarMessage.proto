@@ -1,0 +1,15 @@
+syntax = "proto2";
+import public "IncubationSessionInformationMessage.proto";
+import "BirdType.proto";
+
+message StartNewSessionWithCalendarMessage {
+    message IncubationDayInformationMessage {
+        required uint32 dayNumber = 1;
+        required IncubationSessionInformationMessage information = 2;
+
+    }
+    required uint32 calendarId = 1;
+    required BirdType birdType = 2;
+    required uint32 count = 4;
+    repeated IncubationDayInformationMessage days = 3;
+}

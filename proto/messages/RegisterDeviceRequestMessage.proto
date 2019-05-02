@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message RegisterDeviceRequestMessage {
+    required string serialNumber = 2;
+}

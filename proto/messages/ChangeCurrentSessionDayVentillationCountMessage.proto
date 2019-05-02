@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChangeCurrentSessionDayVentillationCountMessage {
+    required uint32 dayNumber = 2;
+    required uint32 ventillationCount = 3;
+}

@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "ChangeCurrentSessionDayHumidityMessage.proto";
+import "ChangeCurrentSessionDayParametersMessage.proto";
+import "ChangeCurrentSessionDayRotationCountMessage.proto";
+import "ChangeCurrentSessionDayTemperatureMessage.proto";
+import "ChangeCurrentSessionDayVentillationCountMessage.proto";
+import "ChangeCurrentSessionDayVentillationDurationMessage.proto";
+import "ForceRotateEggsMessage.proto";
+import "ForceVentilateIncubatorMessage.proto";
+import "SendCalendarMessage.proto";
+import "StartNewSessionMessage.proto";
+import "RegistrationSuccessNotificationMessage.proto";
+message IncomeMessage  {
+    optional uint32 replyWith = 50;
+    optional uint32 inReplyTo = 51;
+    oneof content {
+        ChangeCurrentSessionDayHumidityMessage changeDayHumidityMessage = 1;
+        ChangeCurrentSessionDayParametersMessage changeDayParametersMessage = 2;
+        ChangeCurrentSessionDayRotationCountMessage changeDayRotationCountMessage = 3;
+        ChangeCurrentSessionDayTemperatureMessage changeDayTemperatureMessage = 4;
+        ChangeCurrentSessionDayVentillationCountMessage changeDayVentillationCountMessage = 6;
+        ChangeCurrentSessionDayVentillationDurationMessage changeDayVentillationDurationMessage = 7;
+        ForceRotateEggsMessage forceRotateEggsMessage = 8;
+        ForceVentilateIncubatorMessage forceVentilateIncubatorMessage = 9;
+        SendCalendarMessage sendCalendarMessage = 10;
+        StartNewSessionMessage startNewSessionMessage = 11;
+        RegistrationSuccessNotificationMessage successRegistrationMessage = 12;
+
+    };
+}

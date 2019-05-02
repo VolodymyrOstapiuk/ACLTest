@@ -1,0 +1,7 @@
+syntax = "proto2";
+import "StartNewSessionWithBirdTypeMessage.proto";
+import "StartNewSessionWithCalendarMessage.proto";
+message StartNewSessionMessage {
+    optional StartNewSessionWithBirdTypeMessage startNewSessionWithBirdTypeMessage = 1;
+    optional StartNewSessionWithCalendarMessage startNewSessionWithCalendarMessage = 2;
+}

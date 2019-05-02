@@ -1,0 +1,6 @@
+syntax = "proto2";
+enum BirdType {
+    Chicken = 1;
+    Duck = 2;
+    Goose = 3;
+}

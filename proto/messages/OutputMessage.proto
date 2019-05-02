@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "IncubatorOutputMessagePayload.proto";
+message OutputMessage {
+    required uint32 deviceId = 1;
+    optional uint32 replyWith = 50;
+    optional uint32 inReplyTo = 51;
+    optional IncubatorOutputMessagePayload incubatorOutputMessagePayload = 2;
+
+}

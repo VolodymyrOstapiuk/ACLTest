@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message IncubatorVentilationEventMessage {
+    required uint32 duration = 2;
+}

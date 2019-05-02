@@ -1,0 +1,7 @@
+syntax = "proto2";
+import "BirdType.proto";
+
+message NewSessionStartedMessage {
+    optional uint32 calendarId = 1;
+    optional BirdType birdType = 2;
+}

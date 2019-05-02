@@ -1,0 +1,6 @@
+syntax = "proto2";
+import "BirdType.proto";
+
+message StartNewSessionWithBirdTypeMessage {
+    required BirdType birdType = 2;
+}

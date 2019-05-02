@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "ChangeCurrentSessionDayHumidityMessage.proto";
+import "ChangeCurrentSessionDayParametersMessage.proto";
+import "ChangeCurrentSessionDayRotationCountMessage.proto";
+import "ChangeCurrentSessionDayTemperatureMessage.proto";
+import "ChangeCurrentSessionDayVentillationCountMessage.proto";
+import "ChangeCurrentSessionDayVentillationDurationMessage.proto";
+import "ForceRotateEggsMessage.proto";
+import "ForceVentilateIncubatorMessage.proto";
+import "RegistrationSuccessNotificationMessage.proto";
+import "StartNewSessionWithBirdTypeMessage.proto";
+import "StartNewSessionWithCalendarMessage.proto";
+message IncubatorIncomeMessagePayload  {
+    optional  ChangeCurrentSessionDayHumidityMessage changeDayHumidityMessage = 3;
+    optional ChangeCurrentSessionDayParametersMessage changeDayParametersMessage = 4;
+    optional ChangeCurrentSessionDayRotationCountMessage changeDayRotationCountMessage = 5;
+    optional ChangeCurrentSessionDayTemperatureMessage changeDayTemperatureMessage = 6;
+    optional ChangeCurrentSessionDayVentillationCountMessage changeDayVentillationCountMessage = 7;
+    optional ChangeCurrentSessionDayVentillationDurationMessage changeDayVentillationDurationMessage = 8;
+    optional ForceRotateEggsMessage forceRotateEggsMessage = 9;
+    optional ForceVentilateIncubatorMessage forceVentilateIncubatorMessage = 10;
+    optional StartNewSessionWithBirdTypeMessage startNewSessionWithBirdTypeMessage = 11;
+    optional StartNewSessionWithCalendarMessage startNewSessionWithCalendarMessage = 12;
+    optional RegistrationSuccessNotificationMessage successRegistrationMessage = 13;
+
+}

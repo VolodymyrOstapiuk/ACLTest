@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "IncubationSessionCurrentHumidityMessage.proto";
+import "IncubationSessionCurrentTemperatureMessage.proto";
+import "RegisterDeviceRequestMessage.proto";
+import "CriticalHumidityValueMessage.proto";
+import "CriticalTemperatureValueMessage.proto";
+import "IncubatorOpenEventMessage.proto";
+import "IncubatorRotationEventMessage.proto";
+import "IncubatorVentilationEventMessage.proto";
+import "NewSessionStartedMessage.proto";
+
+message IncubatorOutputMessagePayload {
+    optional IncubationSessionCurrentHumidityMessage currentHumidityMessage = 1;
+    optional IncubationSessionCurrentTemperatureMessage currentTemperatureMessage = 2;
+    optional RegisterDeviceRequestMessage registerDeviceRequestMessage = 4;
+    optional CriticalHumidityValueMessage criticalHumidityValueMessage = 6;
+    optional CriticalTemperatureValueMessage criticalTemperatureValueMessage = 7;
+    optional IncubatorOpenEventMessage incubatorOpenEventMessage = 8;
+    optional IncubatorRotationEventMessage incubatorRotationEventMessage = 9;
+    optional IncubatorVentilationEventMessage incubatorVentilationEventMessage = 10;
+    optional NewSessionStartedMessage newSessionStartedMessage = 11;
+}

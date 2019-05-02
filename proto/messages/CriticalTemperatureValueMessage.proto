@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CriticalTemperatureValueMessage {
+    required float currentTemperature = 2;
+    required float neededTemperature = 3;
+}

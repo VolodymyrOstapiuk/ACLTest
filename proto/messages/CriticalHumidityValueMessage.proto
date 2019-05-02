@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CriticalHumidityValueMessage {
+    required float currentHumidity = 2;
+    required float neededHumidity = 3;
+}

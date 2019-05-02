@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ChangeCurrentSessionDayParametersMessage {
+    required uint32 dayNumber = 2;
+    required float temperature = 3;
+    required float humidity = 4;
+    required uint32 rotationCount = 5;
+    required uint32 ventilationCount = 6;
+    required uint32 ventilationDuration = 7;
+}
