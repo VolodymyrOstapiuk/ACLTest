@@ -1,0 +1,12 @@
+//
+// Created by volodymyr on 02.05.19.
+//
+
+#ifndef INCUBATORTESTCLIENT_SUCCESSREGISTRATIONMESSAGEPARSER_H
+#define INCUBATORTESTCLIENT_SUCCESSREGISTRATIONMESSAGEPARSER_H
+
+#include "../../proto/RegistrationSuccessNotificationMessage.pb.h"
+
+extern const RegistrationSuccessNotificationMessage REGISTRATION_SUCCESS_NOTIFICATION_MESSAGE_init_parser;
+
+#endif //INCUBATORTESTCLIENT_SUCCESSREGISTRATIONMESSAGEPARSER_H

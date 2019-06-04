@@ -9,7 +9,6 @@
 #endif
 
 
-
 const pb_field_t ChangeCurrentSessionDayHumidityMessage_fields[3] = {
     PB_FIELD(  2, UINT32  , REQUIRED, STATIC  , FIRST, ChangeCurrentSessionDayHumidityMessage, dayNumber, dayNumber, 0),
     PB_FIELD(  3, FLOAT   , REQUIRED, STATIC  , OTHER, ChangeCurrentSessionDayHumidityMessage, humidity, dayNumber, 0),

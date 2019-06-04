@@ -1,0 +1,8 @@
+//
+// Created by volodymyr on 30.04.19.
+//
+
+#ifndef INCUBATORTESTCLIENT_CONFIG_H
+#define INCUBATORTESTCLIENT_CONFIG_H
+
+#endif //INCUBATORTESTCLIENT_CONFIG_H
